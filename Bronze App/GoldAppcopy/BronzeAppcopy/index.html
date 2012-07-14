@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- Taylor Eisman -->
 <!-- MIU 06/12 -->
-<!-- Project 2 Gold App -->
+<!-- Project 2 Bronze App -->
 
 <html>
 	<head>
@@ -26,16 +26,31 @@
 					<a href="addItem.html" data-role="button" data-theme="b">Add A Bill</a> 
 				</nav>
 			</div>
-			<div data-role"content">
-				<ul data-role="listview">
-					<li><div class="linkTitle">View current bills:</div></li>
-					<li><a href="#displayAll" data-icon="star">Display All</a></li>
-					<li><a href="#cell"><img src="images/cell.png" />Cell Bills</a></li>
-					<li><a href="#car"><img src="images/car.png" />Car Bills</a></li>
-					<li><a href="#rent"><img src="images/rent.png" />Rent Bills</a></li>
-					<li><a href="#cable"><img src="images/cable.png" />Cable Bills</a></li>
-				</ul>
-			</div> <!-- List Content -->
+			<div data-role="content">
+			<div data-role="collapsible-set">	
+				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+					<h3>Display All</h3>
+					<p>Content coming soon.</p>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Cell Bills</h3>
+					<p>Content coming soon.</p>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Car Bills</h3>
+					<p>Content coming soon.</p>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Rent Bills</h3>
+					<p>Content coming soon.</p>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Cable Bills</h3>
+					<p>Content coming soon.</p>
+				</div>
+			</div>		
+		</div>
+
 			<div data-role="footer" data-position="fixed">
 				<div data-role="navbar">
 					<ul>
@@ -46,28 +61,17 @@
 				</div><!-- Navbar -->
 			</div> <!-- Footer -->
 		</div><!-- Home Page -->
-		
-		
-		
+				
 		<div data-role="page" id="info">
 			<div data-role="header" data-position="fixed">
 				<h1>Info</h1>
 			</div> <!-- Header -->
-			<div data-role"content">
-				<a href="https://github.com/TaylorEisman12/MIU07-12" data-role="button" data-icon="grid" data-iconpos="top" data-inline="true" data-mini="true">Git Links</a>
-				<a href="index.html" data-role="button" data-icon="star" data-iconpos="top" data-inline="true" data-mini="true">Gold App</a>
-				<a href="BronzeAppcopy/index.html" data-role="button" data-icon="gear" data-iconpos="top" data-inline="true" data-mini="true">Brnze App</a>	
-			</div> <!-- List Content -->
-			<div data-role="footer" data-position="fixed">
-				<div data-role="navbar">
-					<ul>
-						<li><a href="#search" data-icon="search">Search</a></li>
-						<li><a href="#home" data-icon="home">Home</a></li>
-						<li><a href="#info" data-icon="info" class="ui-btn-active">Info</a></li>
-					</ul>
-				</div><!-- Navbar -->
-			</div> <!-- Footer -->
-		</div><!-- Info Page -->		
+		
+		
+		
+		
+		
+				
 		
 		<div data-role="page" id="search">
 			<div data-role="header" data-position="fixed">
@@ -89,12 +93,12 @@
 			</div> <!-- Footer -->
 		</div><!-- Search Page -->
 
-	<div data-role="page" id="displayAll">
+	<div data-role="page" id="displayAll" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed">
 			<h1>All Bills</h1>
 		</div> <!-- Header -->
 		<div data-role"content">
-			<ul data-role="listview" data-filter="true">
+			<ul data-role="listview">
 				<li>Content coming soon!</li>
 			</ul>
 		</div> <!-- List Content -->
@@ -109,12 +113,12 @@
 		</div>
 	</div> <!-- DisplayAll Page -->	
 	
-		<div data-role="page" id="cell" data-filter="true">
+		<div data-role="page" id="cell" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed">
 			<h1>Cell Bills</h1>
 		</div> <!-- Header -->
 		<div data-role"content">
-			<ul data-role="listview" data-filter="true">
+			<ul data-role="listview">
 				<li>Content coming soon!</li>
 			</ul>
 		</div> <!-- List Content -->
@@ -129,12 +133,12 @@
 		</div>
 	</div> <!-- Cell Page -->
 
-		<div data-role="page" id="car" data-filter="true">
+		<div data-role="page" id="car" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed">
 			<h1>Car Bills</h1>
 		</div> <!-- Header -->
 		<div data-role"content">
-			<ul data-role="listview" data-filter="true">
+			<ul data-role="listview">
 				<li>Content coming soon!</li>
 			</ul>
 		</div> <!-- List Content -->
@@ -149,12 +153,12 @@
 		</div>
 	</div> <!-- Car Page -->
 	
-		<div data-role="page" id="rent" data-filter="true">
+		<div data-role="page" id="rent" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed">
 			<h1>Rent Bills</h1>
 		</div> <!-- Header -->
 		<div data-role"content">
-			<ul data-role="listview" data-filter="true">
+			<ul data-role="listview">
 				<li>Content coming soon!</li>
 			</ul>
 		</div> <!-- List Content -->
@@ -169,12 +173,12 @@
 		</div>
 	</div> <!-- Rent Page -->
 	
-		<div data-role="page" id="cable" data-filter="true">
+		<div data-role="page" id="cable" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed">
 			<h1>Cable Bills</h1>
 		</div> <!-- Header -->
 		<div data-role"content">
-			<ul data-role="listview" data-filter="true">
+			<ul data-role="listview">
 				<li>Content coming soon!</li>
 			</ul>
 		</div> <!-- List Content -->
