@@ -1,6 +1,7 @@
 // Taylor Eisman
 // MIU 06/12
 // Project 2
+// Bronze App
 
 function BPupdate(e){
 	document.getElementById('BPValue').innerHTML = e;	
