@@ -24,7 +24,7 @@
 				<form action="" method="post" id="addBillForm">
 					<div data-role="fieldcontain">
 						<label for="category">*Category</label>
-						<select name="category" id="category" data-native-menu="false">
+						<select name="category" id="category" data-native-menu="false" class="required">
 							<option data-placeholder="true">Select a Category</option>
 							<option value="cell">Cell</option>
 							<option value="car">Car</option>
@@ -34,11 +34,11 @@
 					</div><!-- Category dropdown fieldcontain -->
 					<div data-role="fieldcontain">
 						<label for="compName">*Company Name</label>
-						<input type="text" name="compName" id="compName" placeholder="Please enter Company Name." />
+						<input type="text" name="compName" id="compName" placeholder="Please enter Company Name." class="required" />
 					</div><!-- Company Name text fieldcontain -->
 					<div data-role="fieldcontain">
 						<label for="compEmail">*Company Email</label>
-						<input type="text" name="compEmail" id="compEmail" placeholder="Please enter a valid Email." />
+						<input type="text" name="compEmail" id="compEmail" placeholder="Please enter a valid Email." class="required" />
 						<span>Example: abc@abc.com</span>
 					</div><!-- Company Email text fieldcontain-->
 					<div data-role="fieldcontain">
@@ -72,7 +72,8 @@
 						<input type="range" name="budgetPercent" id="budgetPercent" value="50" min="0" max="100" />
 					</div><!-- budget percent slider fieldcontain -->
 					<div data-role="fieldcontain">
-						
+						<label for="date">Date Added:</label>
+						<input type="date" id="date" placeholder="yyyy-mm-dd" />
 					</div><!-- Date added fieldcontain -->
 					<div data-role="fieldcontain">
 						<label for="notes">Notes</label>
@@ -82,9 +83,21 @@
 						<input type="submit" value="Save Bill" data-theme="b" />
 						<input type="reset" value="Clear" data-theme="a" />
 					</div><!-- submit/clear buttons fieldcontain -->
+					<a href="#recordBillErrors" id="billFormErrors" data-rel="dialog"></a>
 				</form>
 			</div> <!-- Content -->
 		</div> <!-- Page -->
+		
+		<div data-role="dialog" id="recordBillErrors">
+			<div data-role="header" data-position="fixed">
+				<h1>Missing Fields</h1>
+			</div>
+			<div data-role="content">
+				<ul>
+					<li>Test.</li>
+				</ul>
+			</div>
+		</div>
 		
 	
 	
