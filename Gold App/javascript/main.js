@@ -1,6 +1,7 @@
 // Taylor Eisman
 // MIU 06/12
 // Project 2
+// Gold App
 
 function BPupdate(e){
 	document.getElementById('BPValue').innerHTML = e;	
