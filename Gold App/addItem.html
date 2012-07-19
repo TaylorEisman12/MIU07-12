@@ -31,19 +31,19 @@
 							<option value="rent">Rent</option>
 							<option value="cable">Cable</option>
 						</select>
-					</div><!-- Category fieldcontain -->
+					</div><!-- Category dropdown fieldcontain -->
 					<div data-role="fieldcontain">
 						<label for="compName">*Company Name</label>
 						<input type="text" name="compName" id="compName" />
-					</div><!-- Company Name fieldcontain -->
+					</div><!-- Company Name text fieldcontain -->
 					<div data-role="fieldcontain">
 						<label for="compEmail">*Company Email</label>
 						<input type="text" name="compEmail" id="compEmail" />
-					</div><!-- Company Email fieldcontain-->
+					</div><!-- Company Email text fieldcontain-->
 					<div data-role="fieldcontain">
 						<label for="compWebsite">Company Website</label>
 						<input type="text" name="compWebsite" id="compWebsite" />
-					</div> <!-- Company website fieldcontain -->
+					</div> <!-- Company website text fieldcontain -->
 					<div data-role="fieldcontain">
 						<fieldset data-role="controlgroup">
 							<legend>Pay By</legend>
@@ -54,11 +54,21 @@
 						</fieldset>	
 					</div><!-- Payby Radio fieldcontain -->
 					<div data-role="fieldcontain">
+						<label for="pastDue">Past Due?</label><br />
+						<select data-role="slider">
+							<option value="off">No</option>
+							<option value="yes">Yes</option>
+						</select>
+					</div>
+					<!-- <div data-role="fieldcontain">
 						<fieldset data-role="controlgroup">
 							<input type="checkbox" value="yes" name="pastDue" id="pastDue" />
 							<label for="pastDue">Past Due?</label>
 						</fieldset>
-					</div><!-- PastDue fieldcontain -->
+					</div> --><!-- PastDue checkbox fieldcontain -->
+					<div data-role="fieldcontain">
+						<label
+					</div>
 				</form>
 			</div> <!-- Content -->
 		</div> <!-- Page -->
