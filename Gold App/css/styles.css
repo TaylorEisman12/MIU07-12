@@ -5,6 +5,10 @@
 
 label.error{display:block; margin:10px 0; color:#cc0000;}
 
+#requiredHint{color:grey; font-size: small;}
+
+#cta{padding: 0px 20px;}
+
 /*header {
 	background-color: navy;
 	margin: 0px;
