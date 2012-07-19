@@ -18,7 +18,7 @@
 		<div data-role="page" id="addBill" data-add-back-btn="true">
 			<div data-role="header" data-position="fixed">
 				<h1>Add A Bill</h1>
-			</div>
+			</div><!-- header -->
 			<span>*fields are required.</span>
 			<div data-role="content">
 				<form action="" method="post" id="addBillForm">
@@ -31,19 +31,19 @@
 							<option value="rent">Rent</option>
 							<option value="cable">Cable</option>
 						</select>
-					</div>
+					</div><!-- Category fieldcontain -->
 					<div data-role="fieldcontain">
 						<label for="compName">*Company Name</label>
 						<input type="text" name="compName" id="compName" />
-					</div>
+					</div><!-- Company Name fieldcontain -->
 					<div data-role="fieldcontain">
 						<label for="compEmail">*Company Email</label>
 						<input type="text" name="compEmail" id="compEmail" />
-					</div>
+					</div><!-- Company Email fieldcontain-->
 					<div data-role="fieldcontain">
 						<label for="compWebsite">Company Website</label>
 						<input type="text" name="compWebsite" id="compWebsite" />
-					</div>
+					</div> <!-- Company website fieldcontain -->
 					<div data-role="fieldcontain">
 						<fieldset data-role="controlgroup">
 							<legend>Pay By</legend>
@@ -52,10 +52,16 @@
 							<input type="radio" value="mail" name="mail" id="mail" />
 							<label for="mail">Mail</label>
 						</fieldset>	
-					</div>
+					</div><!-- Payby Radio fieldcontain -->
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup">
+							<input type="checkbox" value="yes" name="pastDue" id="pastDue" />
+							<label for="pastDue">Past Due?</label>
+						</fieldset>
+					</div><!-- PastDue fieldcontain -->
 				</form>
-			</div>
-		</div>
+			</div> <!-- Content -->
+		</div> <!-- Page -->
 		
 	
 	
