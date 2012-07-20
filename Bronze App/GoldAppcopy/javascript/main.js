@@ -1,8 +1,37 @@
 // Taylor Eisman
 // MIU 06/12
-// Project 2
+// Project 3
+// Gold App
 
-function BPupdate(e){
+
+var parseBillForm = function(data){
+	console.log();
+};
+
+$(document).bind('pageinit', function(){
+	var billForm = $('#addBillForm'),
+	billFormErrors = $('billFormErrors')
+	;
+	billForm.validate({
+		invalidHandler: function(form, validator){
+		billFormErrors.click();
+		var html = '';
+		for(var key in validator.submitted){
+			var label = $('label[for^="'+ key +'"]').not('[generated]');
+			var legend = label.closest('fieldset').find('.ui-controlgroup-label');
+			var fieldName = legend.length ? legend.text() : label.text();
+			html += '<li>'+ fieldName +'</li>';
+		};
+		$("recordBillErrors ul").html(html);
+		},
+		submitHandler: function(){
+			var data = billForm.serializeArray();
+			parseBillForm(data);
+		}
+	});
+});
+
+/*function BPupdate(e){
 	document.getElementById('BPValue').innerHTML = e;	
 }
 
@@ -275,3 +304,4 @@ window.addEventListener("DOMContentLoaded", function(){
 	save.addEventListener("click", validate);
 
 });
+*/

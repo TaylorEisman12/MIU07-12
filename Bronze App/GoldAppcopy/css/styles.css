@@ -1,6 +1,15 @@
 /* Taylor Eisman */
 /* MIU 06/12 */
-/* Project 2 */
+/* Project 3 */
+/* Gold App */
+
+label.error{display:block; margin:10px 0; color:#cc0000;}
+
+#requiredHint{color:grey; font-size: small;}
+
+#cta{padding: 0px 20px;}
+
+#cancelLink{padding: 0px 40px;}
 
 /*header {
 	background-color: navy;
