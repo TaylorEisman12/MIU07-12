@@ -1,11 +1,11 @@
 // Taylor Eisman
 // MIU 06/12
-// Project 2
+// Project 3
 // Gold App
 
 
 var parseBillForm = function(data){
-	
+	console.log();
 };
 
 $(document).bind('pageinit', function(){
