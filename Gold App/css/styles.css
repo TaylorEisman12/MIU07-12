@@ -11,6 +11,9 @@ label.error{display:block; margin:10px 0; color:#cc0000;}
 
 #cancelLink{padding: 0px 40px;}
 
+.ui-body-f {background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #2BBBEF));}
+
+.ui-body-g {background-color: blue;}
 /*header {
 	background-color: navy;
 	margin: 0px;
