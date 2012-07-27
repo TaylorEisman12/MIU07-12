@@ -2,7 +2,8 @@
 /* MIU 06/12 */
 /* Project 2 */
 
-/*header {
+/*
+header {
 	background-color: navy;
 	margin: 0px;
 	border: 1px dashed black;
@@ -96,8 +97,7 @@ legend {
 	color: silver;
 	font-size: larger;
 }
-*/
-/*
+*/ /*
 a.link{color: blue;}
 a.visited{color: red;}
 a.hover{color: gray;}

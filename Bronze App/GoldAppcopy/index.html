@@ -17,8 +17,8 @@
 		<script src="js/libs/modernizr.custom.min.js"></script>
 	</head>
 	<body>
-		<div data-role="page" id="home">
-			<div data-role="header" data-position="fixed">
+		<div data-role="page" id="home" data-theme="f">
+			<div data-role="header" data-theme="b" data-position="fixed">
 				<h1>Bill Saver</h1>
 			</div> <!-- Header -->
 			<div id="cta">
@@ -28,16 +28,18 @@
 				</nav>
 			</div>
 			<div data-role"content">
-				<ul data-role="listview">
+				<ul data-role="listview" data-shadow="true" data-inset="true">
 					<li><div class="linkTitle">View current bills:</div></li>
-					<li><a href="#displayAll" data-icon="star">Display All</a></li>
-					<li><a href="#cell"><img src="images/cell.png" />Cell Bills</a></li>
+				</ul>
+				<a href="#displayAll" data-role="button" data-theme="b" data-icon="star">Display All</a>
+				<ul data-role="listview" data-shadow="true" data-inset="true">
+					<li><a href="#cell"><img src="images/cell.png"/>Cell Bills</a></li>
 					<li><a href="#car"><img src="images/car.png" />Car Bills</a></li>
 					<li><a href="#rent"><img src="images/rent.png" />Rent Bills</a></li>
 					<li><a href="#cable"><img src="images/cable.png" />Cable Bills</a></li>
 				</ul>
 			</div> <!-- List Content -->
-			<div data-role="footer" data-position="fixed">
+			<div data-role="footer" data-theme="b" data-position="fixed">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#search" data-icon="search">Search</a></li>
@@ -50,16 +52,16 @@
 		
 		
 		
-		<div data-role="page" id="info">
-			<div data-role="header" data-position="fixed">
-				<h1>Info</h1>
+		<div data-role="page" id="info" data-theme="f">
+			<div data-role="header" data-theme="b" data-position="fixed">
+				<h1>Bill Saver</h1>
 			</div> <!-- Header -->
 			<div data-role"content">
 				<a href="https://github.com/TaylorEisman12/MIU07-12" data-role="button" data-icon="grid" data-iconpos="top" data-inline="true" data-mini="true">Git Links</a>
 				<a href="index.html" data-role="button" data-icon="star" data-iconpos="top" data-inline="true" data-mini="true">Gold App</a>
 				<a href="BronzeAppcopy/index.html" data-role="button" data-icon="gear" data-iconpos="top" data-inline="true" data-mini="true">Brnze App</a>	
 			</div> <!-- List Content -->
-			<div data-role="footer" data-position="fixed">
+			<div data-role="footer" data-theme="b" data-position="fixed">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#search" data-icon="search">Search</a></li>
@@ -70,17 +72,256 @@
 			</div> <!-- Footer -->
 		</div><!-- Info Page -->		
 		
-		<div data-role="page" id="search">
+		<div data-role="page" data-theme="f" id="search">
 			<div data-role="header" data-position="fixed">
 				<h1>Search</h1>
 			</div> <!-- Header -->
 			<div data-role"content">
 				<ul data-role="listview" data-filter="true">
-					<li>Search for a bill.</li>
-					
+					<li><div class="linkTitle">Searched Bills:</div></li>
+					<li>
+					<img src="images/cell.png">
+					Category: Cell<br />
+					Company Name: AT&T<br />
+					Company Email: salesGuy@att.net<br />
+					Company Website: www.att.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 25<br />
+					Date Added: 2012-01-18<br />
+					Notes: Ask about upgrade.
+				</li>
+				<li>
+					<img src="images/car.png">
+					Category: Car<br />
+					Company Name: A+ FCU<br />
+					Company Email: loanGal@aplus.com<br />
+					Company Website: www.a+fcu.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 50<br />
+					Date Added: 2011-02-11<br />
+					Notes: Check oil.<br />
+				</li>
+				<li>
+					<img src="images/rent.png">
+					Category: Rent<br />
+					Company Name: OverLooks<br />
+					Company Email: rentDue@apartment.com<br />
+					Company Website: www.overlooks.com<br />
+					Pay By: Mail<br />
+					Past Due: Yes<br />
+					Budget Percent: 75<br />
+					Date Added: 2011-12-21<br />
+					Notes: Call office.<br />
+				</li>
+				<li>
+					<img src="images/cable.png">
+					Category: Cable<br />
+					Company Name: Time Warner<br />
+					Company Email: timewarner@time.com<br />
+					Company Website: www.timewarner.com<br />
+					Pay By: Internet<br />
+					Past Due: Yes<br />
+					Budget Percent: 25<br />
+					Date Added: 2011-02-11<br />
+					Notes: Check for faster internet.
+				</li>
+				<li>
+					<img src="images/cell.png">
+					Category: Cell<br />
+					Company Name: Tmobile<br />
+					Company Email: Tmobile@mobile.com<br />
+					Company Website: www.Tmobile.com<br />
+					Pay By: Mail<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-11-11<br />
+					Notes: Daughterss cell phone.
+				</li>
+				<li>
+					<img src="images/cell.png">
+					Category: Cell<br />
+					Company Name: Sprint<br />
+					Company Email: sprint@mobile.com<br />
+					Company Website: www.Sprint.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-09-11<br />
+					Notes: Son's cell phone.
+				</li>
+				<li>
+					<img src="images/rent.png">
+					Category: Rent<br />
+					Company Name: Park Place<br />
+					Company Email: parkplace@healthcare.com<br />
+					Company Website: www.parkplace.com<br />
+					Pay By: Mail<br />
+					Past Due: Yes<br />
+					Budget Percent: 75<br />
+					Date Added: 2011-04-01<br />
+					Notes: Mom's rest home.
+				</li>
+				<li>
+					<img src="images/cable.png">
+					Category: Cable<br />
+					Company Name: Direct Tv<br />
+					Company Email: direct@tv.com<br />
+					Company Website: www.directtv.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 25<br />
+					Date Added: 2012-07-25<br />
+					Notes: Son's dorm room.
+				</li>
+				<li>
+					<img src="images/rent.png">
+					Category: Rent<br />
+					Company Name: Rent A Center<br />
+					Company Email: rent@center.net<br />
+					Company Website: www.rentcenter.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-05-13<br />
+					Notes: 80inch flatscreen.
+				</li>
+				<li>
+					<img src="images/car.png">
+					Category: Car<br />
+					Company Name: Bank Of America<br />
+					Company Email: bank@america.com<br />
+					Company Website: www.BoA.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 75<br />
+					Date Added: 2012-02-01<br />
+					Notes: Red corvette.
+				</li>
+				<li>
+					<img src="images/cable.png">
+					Category: Cable<br />
+					Company Name: RoadRunner<br />
+					Company Email: roadrunner@roads.com<br />
+					Company Website: www.roadrunner.com<br />
+					Pay By: Mail<br />
+					Past Due: Yes<br />
+					Budget Percent: 25<br />
+					Date Added: 2011-04-11<br />
+					Notes: Gram grams condo.
+				</li>
+				<li>
+					<img src="images/car.png">
+					Category: Car<br />
+					Company Name: Bank of Banks<br />
+					Company Email: bank@bank.com<br />
+					Company Website: www.bankobank.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent:	75<br />
+					Date Added: 2012-08-04<br />
+					Notes: Silver Camaro
+				</li>
+				<li>
+					<img src="images/cell.png">
+					Category: Cell<br />
+					Company Name: Verizon<br />
+					Company Email: verizon@mobile.com<br />
+					Company Website: www.verizon.com<br />
+					Pay By: Mail<br />
+					Past Due: No<br />
+					Budget Percent: 25<br />
+					Date Added: 2012-10-10<br />
+					Notes: Uncle Timmy's phone.
+				</li>
+				<li>
+					<img src="images/cable.png">
+					Category: Cable<br />
+					Company Name: att<br />
+					Company Email: att@cable.com<br />
+					Company Website: www.att.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-03-04<br />
+					Notes: Uncle Bob's cable<br />
+				</li>
+				<li>
+					<img src="images/rent.png">
+					Category: Rent<br />
+					Company Name: Amazing Lakes<br />
+					Company Email: amazinglakes@lakes.com<br />
+					Company Website: www.amazinglakes.com<br />
+					Pay By: Mail<br />
+					Past Due: No<br />
+					Budget Percent: 25<br />
+					Date Added: 2012-06-17<br />
+					Notes: Lake house.
+				</li>
+				<li>
+					<img src="images/cable.png">
+					Category: Cable<br />
+					Company Name: Direct Tv<br />
+					Company Email: direct@tv.com<br />
+					Company Website: www.directtv.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-06-15<br />
+					Notes: Lake house cable.
+				</li>
+				<li>
+					<img src="images/car.png">
+					Category: Car<br />
+					Company Name: Kawasaki<br />
+					Company Email: kawasaki@aTv.com<br />
+					Company Website: www.kawasaki.com<br />
+					Pay By: Mail<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-11-10<br />
+					Notes: Atv at lake house.
+				</li>
+				<li>
+					<img src="images/cable.png">
+					Category: Cable<br />
+					Company Name: Sandy's Cable<br />
+					Company Email: sandy@cable.com<br />
+					Company Website: www.sandycable.com<br />
+					Pay By: Internet<br />
+					Past Due: Yes<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-03-06<br />
+					Notes: Cable at my condo.
+				</li>
+				<li>
+					<img src="images/rent.png">
+					Category: Rent<br />
+					Company Name: Condo4Life<br />
+					Company Email: condo@life.com<br />
+					Company Website: www.condo4life.com<br />
+					Pay By: Mail<br />
+					Past Due: No<br />
+					Budget Percent: 50<br />
+					Date Added: 2012-02-19<br />
+					Notes: Austin condo.
+				</li>
+				<li>
+					<img src="images/cell.png">
+					Category: Cell<br />
+					Company Name: Cricket<br />
+					Company Email: cricket@wireless.com<br />
+					Company Website: www.cricket.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-05-11<br />
+					Notes: Hunting lounge spare phone.
+				</li>
 				</ul>
 			</div> <!-- List Content -->
-			<div data-role="footer" data-position="fixed">
+			<div data-role="footer" data-theme="b" data-position="fixed">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#search" data-icon="search"  class="ui-btn-active">Search</a></li>
@@ -91,16 +332,256 @@
 			</div> <!-- Footer -->
 		</div><!-- Search Page -->
 
-	<div data-role="page" id="displayAll">
-		<div data-role="header" data-position="fixed">
-			<h1>All Bills</h1>
+	<div data-role="page" data-theme="f" id="displayAll">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1>Bill Saver</h1>
 		</div> <!-- Header -->
 		<div data-role"content">
 			<ul data-role="listview" data-filter="true">
-				<li>Content coming soon!</li>
+				<li><div class="linkTitle">All Bills:</div></li>
+				<li>
+					<img src="images/cell.png">
+					Category: Cell<br />
+					Company Name: AT&T<br />
+					Company Email: salesGuy@att.net<br />
+					Company Website: www.att.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 25<br />
+					Date Added: 2012-01-18<br />
+					Notes: Ask about upgrade.
+				</li>
+				<li>
+					<img src="images/car.png">
+					Category: Car<br />
+					Company Name: A+ FCU<br />
+					Company Email: loanGal@aplus.com<br />
+					Company Website: www.a+fcu.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 50<br />
+					Date Added: 2011-02-11<br />
+					Notes: Check oil.<br />
+				</li>
+				<li>
+					<img src="images/rent.png">
+					Category: Rent<br />
+					Company Name: OverLooks<br />
+					Company Email: rentDue@apartment.com<br />
+					Company Website: www.overlooks.com<br />
+					Pay By: Mail<br />
+					Past Due: Yes<br />
+					Budget Percent: 75<br />
+					Date Added: 2011-12-21<br />
+					Notes: Call office.<br />
+				</li>
+				<li>
+					<img src="images/cable.png">
+					Category: Cable<br />
+					Company Name: Time Warner<br />
+					Company Email: timewarner@time.com<br />
+					Company Website: www.timewarner.com<br />
+					Pay By: Internet<br />
+					Past Due: Yes<br />
+					Budget Percent: 25<br />
+					Date Added: 2011-02-11<br />
+					Notes: Check for faster internet.
+				</li>
+				<li>
+					<img src="images/cell.png">
+					Category: Cell<br />
+					Company Name: Tmobile<br />
+					Company Email: Tmobile@mobile.com<br />
+					Company Website: www.Tmobile.com<br />
+					Pay By: Mail<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-11-11<br />
+					Notes: Daughterss cell phone.
+				</li>
+				<li>
+					<img src="images/cell.png">
+					Category: Cell<br />
+					Company Name: Sprint<br />
+					Company Email: sprint@mobile.com<br />
+					Company Website: www.Sprint.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-09-11<br />
+					Notes: Son's cell phone.
+				</li>
+				<li>
+					<img src="images/rent.png">
+					Category: Rent<br />
+					Company Name: Park Place<br />
+					Company Email: parkplace@healthcare.com<br />
+					Company Website: www.parkplace.com<br />
+					Pay By: Mail<br />
+					Past Due: Yes<br />
+					Budget Percent: 75<br />
+					Date Added: 2011-04-01<br />
+					Notes: Mom's rest home.
+				</li>
+				<li>
+					<img src="images/cable.png">
+					Category: Cable<br />
+					Company Name: Direct Tv<br />
+					Company Email: direct@tv.com<br />
+					Company Website: www.directtv.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 25<br />
+					Date Added: 2012-07-25<br />
+					Notes: Son's dorm room.
+				</li>
+				<li>
+					<img src="images/rent.png">
+					Category: Rent<br />
+					Company Name: Rent A Center<br />
+					Company Email: rent@center.net<br />
+					Company Website: www.rentcenter.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-05-13<br />
+					Notes: 80inch flatscreen.
+				</li>
+				<li>
+					<img src="images/car.png">
+					Category: Car<br />
+					Company Name: Bank Of America<br />
+					Company Email: bank@america.com<br />
+					Company Website: www.BoA.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 75<br />
+					Date Added: 2012-02-01<br />
+					Notes: Red corvette.
+				</li>
+				<li>
+					<img src="images/cable.png">
+					Category: Cable<br />
+					Company Name: RoadRunner<br />
+					Company Email: roadrunner@roads.com<br />
+					Company Website: www.roadrunner.com<br />
+					Pay By: Mail<br />
+					Past Due: Yes<br />
+					Budget Percent: 25<br />
+					Date Added: 2011-04-11<br />
+					Notes: Gram grams condo.
+				</li>
+				<li>
+					<img src="images/car.png">
+					Category: Car<br />
+					Company Name: Bank of Banks<br />
+					Company Email: bank@bank.com<br />
+					Company Website: www.bankobank.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent:	75<br />
+					Date Added: 2012-08-04<br />
+					Notes: Silver Camaro
+				</li>
+				<li>
+					<img src="images/cell.png">
+					Category: Cell<br />
+					Company Name: Verizon<br />
+					Company Email: verizon@mobile.com<br />
+					Company Website: www.verizon.com<br />
+					Pay By: Mail<br />
+					Past Due: No<br />
+					Budget Percent: 25<br />
+					Date Added: 2012-10-10<br />
+					Notes: Uncle Timmy's phone.
+				</li>
+				<li>
+					<img src="images/cable.png">
+					Category: Cable<br />
+					Company Name: att<br />
+					Company Email: att@cable.com<br />
+					Company Website: www.att.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-03-04<br />
+					Notes: Uncle Bob's cable<br />
+				</li>
+				<li>
+					<img src="images/rent.png">
+					Category: Rent<br />
+					Company Name: Amazing Lakes<br />
+					Company Email: amazinglakes@lakes.com<br />
+					Company Website: www.amazinglakes.com<br />
+					Pay By: Mail<br />
+					Past Due: No<br />
+					Budget Percent: 25<br />
+					Date Added: 2012-06-17<br />
+					Notes: Lake house.
+				</li>
+				<li>
+					<img src="images/cable.png">
+					Category: Cable<br />
+					Company Name: Direct Tv<br />
+					Company Email: direct@tv.com<br />
+					Company Website: www.directtv.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-06-15<br />
+					Notes: Lake house cable.
+				</li>
+				<li>
+					<img src="images/car.png">
+					Category: Car<br />
+					Company Name: Kawasaki<br />
+					Company Email: kawasaki@aTv.com<br />
+					Company Website: www.kawasaki.com<br />
+					Pay By: Mail<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-11-10<br />
+					Notes: Atv at lake house.
+				</li>
+				<li>
+					<img src="images/cable.png">
+					Category: Cable<br />
+					Company Name: Sandy's Cable<br />
+					Company Email: sandy@cable.com<br />
+					Company Website: www.sandycable.com<br />
+					Pay By: Internet<br />
+					Past Due: Yes<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-03-06<br />
+					Notes: Cable at my condo.
+				</li>
+				<li>
+					<img src="images/rent.png">
+					Category: Rent<br />
+					Company Name: Condo4Life<br />
+					Company Email: condo@life.com<br />
+					Company Website: www.condo4life.com<br />
+					Pay By: Mail<br />
+					Past Due: No<br />
+					Budget Percent: 50<br />
+					Date Added: 2012-02-19<br />
+					Notes: Austin condo.
+				</li>
+				<li>
+					<img src="images/cell.png">
+					Category: Cell<br />
+					Company Name: Cricket<br />
+					Company Email: cricket@wireless.com<br />
+					Company Website: www.cricket.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-05-11<br />
+					Notes: Hunting lounge spare phone.
+				</li>
 			</ul>
 		</div> <!-- List Content -->
-		<div data-role="footer" data-position="fixed" data-id="displayAll">
+		<div data-role="footer" data-theme="b" data-position="fixed" data-id="displayAll">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#search" data-icon="search">Search</a></li>
@@ -111,16 +592,76 @@
 		</div>
 	</div> <!-- DisplayAll Page -->	
 	
-		<div data-role="page" id="cell" data-filter="true">
-		<div data-role="header" data-position="fixed">
-			<h1>Cell Bills</h1>
+		<div data-role="page" id="cell" data-theme="f" data-filter="true">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1>Bill Saver</h1>
 		</div> <!-- Header -->
 		<div data-role"content">
 			<ul data-role="listview" data-filter="true">
-				<li>Content coming soon!</li>
+				<li><div class="linkTitle">Cell Bills:</div></li>
+				<li>
+					<img src="images/cell.png">
+					Category: Cell<br />
+					Company Name: AT&T<br />
+					Company Email: salesGuy@att.net<br />
+					Company Website: www.att.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 25<br />
+					Date Added: 2012-01-18<br />
+					Notes: Ask about upgrade.
+				</li>
+				<li>
+					<img src="images/cell.png">
+					Category: Cell<br />
+					Company Name: Tmobile<br />
+					Company Email: Tmobile@mobile.com<br />
+					Company Website: www.Tmobile.com<br />
+					Pay By: Mail<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-11-11<br />
+					Notes: Daughterss cell phone.
+				</li>
+				<li>
+					<img src="images/cell.png">
+					Category: Cell<br />
+					Company Name: Sprint<br />
+					Company Email: sprint@mobile.com<br />
+					Company Website: www.Sprint.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-09-11<br />
+					Notes: Son's cell phone.
+				</li>
+				<li>
+					<img src="images/cell.png">
+					Category: Cell<br />
+					Company Name: Verizon<br />
+					Company Email: verizon@mobile.com<br />
+					Company Website: www.verizon.com<br />
+					Pay By: Mail<br />
+					Past Due: No<br />
+					Budget Percent: 25<br />
+					Date Added: 2012-10-10<br />
+					Notes: Uncle Timmy's phone.
+				</li>
+				<li>
+					<img src="images/cell.png">
+					Category: Cell<br />
+					Company Name: Cricket<br />
+					Company Email: cricket@wireless.com<br />
+					Company Website: www.cricket.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-05-11<br />
+					Notes: Hunting lounge spare phone.
+				</li>
 			</ul>
 		</div> <!-- List Content -->
-		<div data-role="footer" data-position="fixed" data-id="cell">
+		<div data-role="footer" data-theme="b" data-position="fixed" data-id="cell">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#search" data-icon="search">Search</a></li>
@@ -131,16 +672,64 @@
 		</div>
 	</div> <!-- Cell Page -->
 
-		<div data-role="page" id="car" data-filter="true">
-		<div data-role="header" data-position="fixed">
-			<h1>Car Bills</h1>
+		<div data-role="page" id="car" data-theme="f" data-filter="true">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>Bill Saver</h1>
 		</div> <!-- Header -->
 		<div data-role"content">
 			<ul data-role="listview" data-filter="true">
-				<li>Content coming soon!</li>
+				<li><div class="linkTitle">Car Bills:</div></li>
+				<li>
+					<img src="images/car.png">
+					Category: Car<br />
+					Company Name: A+ FCU<br />
+					Company Email: loanGal@aplus.com<br />
+					Company Website: www.a+fcu.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 50<br />
+					Date Added: 2011-02-11<br />
+					Notes: Check oil.<br />
+				</li>
+				<li>
+					<img src="images/car.png">
+					Category: Car<br />
+					Company Name: Bank Of America<br />
+					Company Email: bank@america.com<br />
+					Company Website: www.BoA.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 75<br />
+					Date Added: 2012-02-01<br />
+					Notes: Red corvette.
+				</li>
+				<li>
+					<img src="images/car.png">
+					Category: Car<br />
+					Company Name: Bank of Banks<br />
+					Company Email: bank@bank.com<br />
+					Company Website: www.bankobank.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent:	75<br />
+					Date Added: 2012-08-04<br />
+					Notes: Silver Camaro
+				</li>
+				<li>
+					<img src="images/car.png">
+					Category: Car<br />
+					Company Name: Kawasaki<br />
+					Company Email: kawasaki@aTv.com<br />
+					Company Website: www.kawasaki.com<br />
+					Pay By: Mail<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-11-10<br />
+					Notes: Atv at lake house.
+				</li>
 			</ul>
 		</div> <!-- List Content -->
-		<div data-role="footer" data-position="fixed" data-id="car">
+		<div data-role="footer" data-position="fixed" data-theme="b" data-id="car">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#search" data-icon="search">Search</a></li>
@@ -151,16 +740,77 @@
 		</div>
 	</div> <!-- Car Page -->
 	
-		<div data-role="page" id="rent" data-filter="true">
-		<div data-role="header" data-position="fixed">
-			<h1>Rent Bills</h1>
+		<div data-role="page" id="rent" data-theme="f" data-filter="true">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>Bill Saver</h1>
 		</div> <!-- Header -->
 		<div data-role"content">
 			<ul data-role="listview" data-filter="true">
-				<li>Content coming soon!</li>
+				<li><div class="linkTitle">Rent Bills:</div></li>
+				<li>
+					<img src="images/rent.png">
+					Category: Rent<br />
+					Company Name: OverLooks<br />
+					Company Email: rentDue@apartment.com<br />
+					Company Website: www.overlooks.com<br />
+					Pay By: Mail<br />
+					Past Due: Yes<br />
+					Budget Percent: 75<br />
+					Date Added: 2011-12-21<br />
+					Notes: Call office.<br />
+				</li>
+				<li>
+					<img src="images/rent.png">
+					Category: Rent<br />
+					Company Name: Park Place<br />
+					Company Email: parkplace@healthcare.com<br />
+					Company Website: www.parkplace.com<br />
+					Pay By: Mail<br />
+					Past Due: Yes<br />
+					Budget Percent: 75<br />
+					Date Added: 2011-04-01<br />
+					Notes: Mom's rest home.
+				</li>
+				<li>
+					<img src="images/rent.png">
+					Category: Rent<br />
+					Company Name: Rent A Center<br />
+					Company Email: rent@center.net<br />
+					Company Website: www.rentcenter.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-05-13<br />
+					Notes: 80inch flatscreen.
+				</li>
+				<li>
+					<img src="images/rent.png">
+					Category: Rent<br />
+					Company Name: Amazing Lakes<br />
+					Company Email: amazinglakes@lakes.com<br />
+					Company Website: www.amazinglakes.com<br />
+					Pay By: Mail<br />
+					Past Due: No<br />
+					Budget Percent: 25<br />
+					Date Added: 2012-06-17<br />
+					Notes: Lake house.
+				</li>
+				<li>
+					<img src="images/rent.png">
+					Category: Rent<br />
+					Company Name: Condo4Life<br />
+					Company Email: condo@life.com<br />
+					Company Website: www.condo4life.com<br />
+					Pay By: Mail<br />
+					Past Due: No<br />
+					Budget Percent: 50<br />
+					Date Added: 2012-02-19<br />
+					Notes: Austin condo.
+				</li>
+
 			</ul>
 		</div> <!-- List Content -->
-		<div data-role="footer" data-position="fixed" data-id="rent">
+		<div data-role="footer" data-position="fixed" data-theme="b" data-id="rent">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#search" data-icon="search">Search</a></li>
@@ -171,16 +821,88 @@
 		</div>
 	</div> <!-- Rent Page -->
 	
-		<div data-role="page" id="cable" data-filter="true">
-		<div data-role="header" data-position="fixed">
-			<h1>Cable Bills</h1>
+		<div data-role="page" id="cable" data-theme="f" data-filter="true">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>Bill Saver</h1>
 		</div> <!-- Header -->
 		<div data-role"content">
 			<ul data-role="listview" data-filter="true">
-				<li>Content coming soon!</li>
+				<li><div class="linkTitle">Cable Bills:</div></li>
+				<li>
+					<img src="images/cable.png">
+					Category: Cable<br />
+					Company Name: Time Warner<br />
+					Company Email: timewarner@time.com<br />
+					Company Website: www.timewarner.com<br />
+					Pay By: Internet<br />
+					Past Due: Yes<br />
+					Budget Percent: 25<br />
+					Date Added: 2011-02-11<br />
+					Notes: Check for faster internet.
+				</li>
+				<li>
+					<img src="images/cable.png">
+					Category: Cable<br />
+					Company Name: Direct Tv<br />
+					Company Email: direct@tv.com<br />
+					Company Website: www.directtv.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 25<br />
+					Date Added: 2012-07-25<br />
+					Notes: Son's dorm room.
+				</li>
+				<li>
+					<img src="images/cable.png">
+					Category: Cable<br />
+					Company Name: RoadRunner<br />
+					Company Email: roadrunner@roads.com<br />
+					Company Website: www.roadrunner.com<br />
+					Pay By: Mail<br />
+					Past Due: Yes<br />
+					Budget Percent: 25<br />
+					Date Added: 2011-04-11<br />
+					Notes: Gram grams condo.
+				</li>
+				<li>
+					<img src="images/cable.png">
+					Category: Cable<br />
+					Company Name: att<br />
+					Company Email: att@cable.com<br />
+					Company Website: www.att.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-03-04<br />
+					Notes: Uncle Bob's cable<br />
+				</li>
+				<li>
+					<img src="images/cable.png">
+					Category: Cable<br />
+					Company Name: Direct Tv<br />
+					Company Email: direct@tv.com<br />
+					Company Website: www.directtv.com<br />
+					Pay By: Internet<br />
+					Past Due: No<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-06-15<br />
+					Notes: Lake house cable.
+				</li>
+				<li>
+					<img src="images/cable.png">
+					Category: Cable<br />
+					Company Name: Sandy's Cable<br />
+					Company Email: sandy@cable.com<br />
+					Company Website: www.sandycable.com<br />
+					Pay By: Internet<br />
+					Past Due: Yes<br />
+					Budget Percent: 15<br />
+					Date Added: 2012-03-06<br />
+					Notes: Cable at my condo.
+				</li>
 			</ul>
 		</div> <!-- List Content -->
-		<div data-role="footer" data-position="fixed" data-id="cable">
+		<div data-role="footer" data-position="fixed" data-id="cable" data-theme="b">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#search" data-icon="search">Search</a></li>

@@ -5,11 +5,14 @@
 
 label.error{display:block; margin:10px 0; color:#cc0000;}
 
-#requiredHint{color:grey; font-size: small;}
+#requiredHint{color:maroon; font-size: small;}
 
 #cta{padding: 0px 20px;}
 
 #cancelLink{padding: 0px 40px;}
+
+.ui-body-f {background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #2BBBEF));}
+
 
 /*header {
 	background-color: navy;

@@ -3,13 +3,12 @@
 // Project 3
 // Gold App
 
+window.addEventListener("DOMContentLoaded", function(){
 
 var parseBillForm = function(data){
 	function BPupdate(e){
 	document.getElementById('BPValue').innerHTML = e;	
 }
-
-window.addEventListener("DOMContentLoaded", function(){
 
 	function ge(x){
 		var theElement = document.getElementById(x);
@@ -127,14 +126,14 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 	}
 	
-	function getImage(catName, makeSubList){
+	/*function getImage(catName, makeSubList){
 		var imageLi = document.createElement('li');
 		makeSubList.appendChild(imageLi);
 		var newImage = document.createElement('img');
 		var setSrc = newImage.setAttribute("src", "images/"+ catName + ".png");
 		imageLi.appendChild(newImage);
 	}
-	
+	*/
 	function autoFillData(){
 		for(var n in json){
 			var id = Math.floor(Math.random()*100000001);
